@@ -10,9 +10,6 @@ const connect = function () {
 	conn.on("connect", () => {
 		console.log("successfully connected to Server");
 		conn.write("Name: TAY");
-		setInterval( () => {
-      conn.write("Move: up");
-    }, 500);
 	});
 
 	// interpret incoming data as text
